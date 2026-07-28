@@ -2,6 +2,18 @@
 
 Post-training **Llama-3.2-3B-Instruct** with **GRPO** (via [Prime Intellect](https://www.primeintellect.ai/) `prime-rl` and the [`verifiers`](https://github.com/willccbb/verifiers) framework) to rewrite messy first-draft passages into plain English. The drafts are real revision-stage passages mined from IteraTeR; the target style is a compact rulebook derived from Zinsser's plain-English principles. The experiment compares three LLM-as-judge reward designs on the same task, each combined with a multiplicative content-preservation gate so that "delete the hard sentences" never pays.
 
+📝 **Full write-up:** [LLMs that actually write well](https://app.notion.com/p/rishigundakaram/LLMs-that-actually-write-well-a4d94d08b6b8403f944762718349a339)
+
+## Summary
+
+Can a small model learn to *rewrite* a rough draft into cleaner prose? Starting from an off-the-shelf 3B model, I gave it drafts, sampled rewrites, and scored them with an LLM-as-judge reward, then trained with GRPO. The headline finding is that **reward design decided everything** — same base model, data, and compute, opposite outcomes:
+
+- **Ranking-based rewards worked.** Rewrites from the ranking-trained models were preferred over the untrained base model **~99% of the time** in blind evaluation.
+- **Naive absolute scoring got hacked.** Rewarding absolute per-attribute scores let the model game the objective — its training reward climbed to ~0.9 while the policy *degraded below baseline* (preferred over base only 26% of the time), producing short, generic text that dropped the source's meaning. The multiplicative preservation gate is what keeps the ranking rewards honest.
+- **Still short of the frontier.** The best 3B models land a clear second behind GPT-5.6 (preferred over it only ~6–8%), so the training produced a large, reliable lift from the starting point without closing the gap to a frontier model.
+
+Evaluation was blind and cross-family: rewrites were ranked by frontier judges from **OpenAI, Google, and Anthropic**, with a paper-level train/test split to prevent contamination and a separate content-preservation metric. A consistent lesson: judge *strength* matters — weaker judges flattered the small models, stronger ones did not.
+
 ## Reward designs
 
 All three run inside one `verifiers` environment (`environments/writing_rewrite/`) and are selected with the `REWARD_MODE` env var. Every design multiplies its clarity signal by a per-completion **preservation gate**: a judge audits the rewrite against the source; any meaning change scores 0, and each omission or addition halves the gate (`0.5^n`). Formatting and em-dash penalties apply on top.
