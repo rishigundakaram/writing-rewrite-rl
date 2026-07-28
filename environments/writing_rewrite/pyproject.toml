@@ -1,0 +1,21 @@
+[project]
+name = "writing-rewrite"
+version = "0.5.0"
+description = "RL env: rewrite messy drafts into plain English; reward = within-group clarity rank x content-preservation gate (LLM judges)"
+tags = ["rl", "single-turn", "writing", "llm-judge"]
+requires-python = ">=3.10"
+dependencies = ["verifiers>=0.1.14", "datasets>=2.19", "openai>=1.60", "pydantic>=2.8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["writing_rewrite"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"writing_rewrite/rules.txt" = "writing_rewrite/rules.txt"
+"writing_rewrite/rules_compact.txt" = "writing_rewrite/rules_compact.txt"
+"writing_rewrite/prompts_train.jsonl" = "writing_rewrite/prompts_train.jsonl"
+"writing_rewrite/prompts_val.jsonl" = "writing_rewrite/prompts_val.jsonl"
+"writing_rewrite/winrate_refs.jsonl" = "writing_rewrite/winrate_refs.jsonl"

@@ -1,0 +1,39 @@
+## plainness_and_decluttering — Use the fewest, plainest words that say exactly what you mean.
+- Use of a long Latinate word or padded phrase where a short, plain word would convey the same meaning in general nonfiction (e.g. "at this point in time")
+- Euphemisms or officialese that obscure a plain meaning when a direct term exists (e.g., slum vs (e.g. "impacted with the ground prematurely")
+- Adjectives/adverbs that merely restate information inherent in the base word or already clear from context (e.g., personal friend, smile happily) (e.g. "a personal friend of mine")
+- A tacked-on particle (often “up”) that adds no meaning to the verb (e.g., order up → order) (e.g. "order up")
+- Self-referential throat‑clearing that announces the act of saying instead of saying it (e.g., It should be pointed out…) (e.g. "It should be pointed out ...")
+- Hedging intensifiers like a bit, sort of, in a sense, rather, quite, very, pretty used to soften a statement without a precise purpose (e.g. "sort of")
+- Three or more stacked prepositional phrases that bury action/agent and force rereading (e.g. "Such preparations shall be made as will completely obscure a")
+
+## verb_power_and_active_structure — Prefer people doing actions with strong, specific verbs.
+- Passive voice (be + past participle) with no agent where a clear agent exists and matters (e.g. "initiatives were undertaken")
+- Starting sentences with There is/are/was/were or It is/was that postpone the real subject when a direct subject–verb rewrite would be clearer (e.g. "There are various groups that think you can ban certain kind")
+- Inflated abstract-noun constructions that replace a simple verb and blur agency (e.g., provide assistance → help) (e.g. "provide assistance")
+- Verb + preposition used where a single verb does the job without loss (e.g., set up a business → start/launch a business) (e.g. "Don't set up a business that you can start or launch.")
+- An abstract noun (reaction, response, hostility, cynicism) as sentence subject with no people/agents present (e.g. "The common reaction is incredulous laughter.")
+
+## freshness_not_cliche — Avoid prefab phrasing—journalese, hype, buzzwords, and contrived openers.
+- Stock newsmagazine idioms and prefab action phrases that signal borrowed voice and lazy logic (e.g. "shouldered his way in only to be met by a .22-cal. pistol sl")
+- Trendy verbified nouns and corporatespeak that add no precision in general prose (e.g., prioritize, interface with, impact as a verb, de‑impact, platform as a verb) (e.g. "We target goals and we access facts.")
+- Using adjectives/honorifics as plural nouns (e.g., greats, notables) instead of concrete nouns (e.g. "greats")
+- Shopworn promo words (e.g., famed, upcoming, staffers) that date prose and add no content (e.g. "upcoming")
+- Tired opening formulas Zinsser flags: the future archaeologist, visitor from Mars, one day not long ago, have‑in‑common quiz (e.g. "When some future archaeologist stumbles on the remains of ou")
+- Outlandish comparisons and catastrophe metaphors that strain credibility or scale (e.g. "The living room looked as if an atomic bomb had gone off the")
+
+## momentum_leads_endings — Hook early, add concrete detail fast, and keep pressure building.
+- Formulaic ending openers that announce a summary (In conclusion, In sum, Therefore, as we have seen, To summarize) instead of delivering a crafted close (e.g. "In sum, it can be noted that...")
+- Empty transition crutches that add no content (as stated earlier, overall, by the way, incidentally, a quick detour) and slacken forward pull (e.g. "as stated earlier")
+- Announcing structure instead of executing it (e.g., In the next section I will…) (e.g. "In the next section I will...")
+- Starting narrative with irrelevant routine (alarm clock, breakfast) before the action starts (e.g. "[A fishing trip begins with] the ringing of an alarm clock b")
+- Paragraph‑final sentences that merely summarize (In short…, Therefore…) or trail off in hedges, instead of spring‑boarding the reader to the next idea (e.g. "In short, the results were mixed.")
+
+## anti_llm_slop — Penalize the recognizable habits of LLM-generated prose.
+- Formulaic connective or throat-clearing phrase: 'moreover', 'furthermore', 'it's important to note', 'it's worth noting', 'that said', 'in today's world', 'in conclusion', 'overall,' (e.g. "Moreover, it's important to note that budgets vary.")
+- The contrastive reframe 'not just X, but Y' / 'not only X but also Y' / 'less about X, more about Y' used as emphasis filler (e.g. "This is not just a tool, but a whole new way of working.")
+- Reflexive rule-of-three listing ('clear, concise, and compelling') where the triple adds rhythm but no information (e.g. "The plan is simple, straightforward, and easy to follow.")
+- A final sentence that restates what the passage just said ('Ultimately, ...', 'In the end, what matters is ...') or zooms out to an empty universal (e.g. "Ultimately, success comes down to preparation and persistenc")
+- Hollow emphasis characteristic of model prose: 'truly', 'deeply', 'incredibly', 'seamlessly', 'effortlessly', 'crucially', 'delve into', 'landscape', 'tapestry', 'journey' (figurative), 'game-changer', 'robust' (non-technical) (e.g. "This truly transformative approach seamlessly delves into th")
+- A run of 3+ consecutive sentences with near-identical length and structure (subject-verb-object, no variation), producing the flat metronome cadence of generated text (e.g. "The team built the feature. The users liked the design. The ")
+- Multiple hedges stacked in one claim ('could potentially', 'may help to', 'can often be seen as'), signaling the model's reflexive liability-dodging rather than honest uncertainty (e.g. "This approach could potentially help to improve outcomes in ")
